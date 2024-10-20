@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Directory | Mano Sewa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Mano Sewa Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="self-help.html">Self-Help Tools</a></li>
+                <li><a href="therapists.html">Therapist Directory</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="emergency.html">Emergency Help</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Find a Therapist</h1>
+        <form id="filter-therapists">
+            <label for="location">Filter by Location:</label>
+            <select id="location">
+                <option value="all">All</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="pokhara">Pokhara</option>
+            </select>
+            <label for="specialty">Filter by Specialty:</label>
+            <select id="specialty">
+                <option value="all">All</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="depression">Depression</option>
+            </select>
+            <button type="submit">Filter</button>
+        </form>
+
+        <section class="therapist-list">
+            <h2>Available Therapists</h2>
+
+            <!-- Therapist 1 -->
+            <div class="therapist">
+                <img src="images/doctor1.jpg" alt="Dr. Ashutosh" class="therapist-image">
+                <h3>Dr. Ashutosh</h3>
+                <p>Specialty: Anxiety, Stress</p>
+                <button class="book-btn" data-id="1">Book Appointment</button>
+
+                <!-- Hidden Booking Form -->
+                <div class="booking-form" id="booking-form-1">
+                    <form class="appointment-form">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" required>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p class="success-message" style="display: none;">Booking Successful!</p>
+                </div>
+            </div>
+
+            <!-- Therapist 2 -->
+            <div class="therapist">
+                <img src="images/doctor2.jpg" alt="Dr. Nischal" class="therapist-image">
+                <h3>Dr. Nischal</h3>
+                <p>Specialty: Depression</p>
+                <button class="book-btn" data-id="2">Book Appointment</button>
+
+                <!-- Hidden Booking Form -->
+                <div class="booking-form" id="booking-form-2">
+                    <form class="appointment-form">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" required>
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" required>
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p class="success-message" style="display: none;">Booking Successful!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ManoSewa. All rights reserved. <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxation Games | Mano Sewa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bubble.js" defer></script>
+    <script src="js/coloring.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Mano Sewa Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="self-help.html">Self-Help Tools</a></li>
+                <li><a href="therapists.html">Therapist Directory</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="emergency.html">Emergency Help</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Relaxation Games</h1>
+        <div class="game-container">
+            <div id="bubble-container">
+                <h2>Breathing Bubble Game</h2>
+                <div id="instructions"></div>
+                <div id="bubble"></div>
+            </div>
+
+            <div id="coloring-container">
+                <h2>Mindful Coloring Game</h2>
+                <canvas id="coloringCanvas" width="500" height="400"></canvas>
+                <div id="color-palette">
+                    <button style="background-color: red;" onclick="changeColor('red')"></button>
+                    <button style="background-color: green;" onclick="changeColor('green')"></button>
+                    <button style="background-color: blue;" onclick="changeColor('blue')"></button>
+                    <button style="background-color: yellow;" onclick="changeColor('yellow')"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 ManoSewa. All rights reserved. <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

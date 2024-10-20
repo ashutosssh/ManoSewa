@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Quizzes | Mano Sewa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Mano Sewa Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="self-help.html">Self-Help Tools</a></li>
+                <li><a href="therapists.html">Therapist Directory</a></li>
+                <li><a href="quiz.html">Quizzes</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="emergency.html">Emergency Help</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mental Health Quizzes</h1>
+        <p>Assess your mental well-being with the following quizzes:</p>
+        <div id="quiz-content">
+            <h3>1. How are you feeling today?</h3>
+            <label><input type="radio" name="feeling" value="good"> Good</label><br>
+            <label><input type="radio" name="feeling" value="okay"> Okay</label><br>
+            <label><input type="radio" name="feeling" value="bad"> Bad</label><br>
+
+            <h3>2. How do you handle stress?</h3>
+            <label><input type="radio" name="stress" value="exercise"> I exercise</label><br>
+            <label><input type="radio" name="stress" value="meditate"> I meditate</label><br>
+            <label><input type="radio" name="stress" value="avoid"> I avoid it</label><br>
+            <label><input type="radio" name="stress" value="talk"> I talk to someone</label><br>
+
+            <h3>3. Do you feel comfortable reaching out for help?</h3>
+            <label><input type="radio" name="help" value="yes"> Yes</label><br>
+            <label><input type="radio" name="help" value="sometimes"> Sometimes</label><br>
+            <label><input type="radio" name="help" value="no"> No</label><br>
+
+            <h3>4. How often do you feel overwhelmed?</h3>
+            <label><input type="radio" name="overwhelmed" value="often"> Often</label><br>
+            <label><input type="radio" name="overwhelmed" value="sometimes"> Sometimes</label><br>
+            <label><input type="radio" name="overwhelmed" value="rarely"> Rarely</label><br>
+            <label><input type="radio" name="overwhelmed" value="never"> Never</label><br>
+
+            <h3>5. Do you prioritize self-care activities?</h3>
+            <label><input type="radio" name="self_care" value="always"> Always</label><br>
+            <label><input type="radio" name="self_care" value="often"> Often</label><br>
+            <label><input type="radio" name="self_care" value="sometimes"> Sometimes</label><br>
+            <label><input type="radio" name="self_care" value="never"> Never</label><br>
+
+            <h3>6. How do you feel about your relationships with family and friends?</h3>
+            <label><input type="radio" name="relationships" value="great"> Great</label><br>
+            <label><input type="radio" name="relationships" value="okay"> Okay</label><br>
+            <label><input type="radio" name="relationships" value="strained"> Strained</label><br>
+            <label><input type="radio" name="relationships" value="isolated"> Isolated</label><br>
+
+            <h3>7. How often do you feel anxious or nervous?</h3>
+            <label><input type="radio" name="anxiety" value="often"> Often</label><br>
+            <label><input type="radio" name="anxiety" value="sometimes"> Sometimes</label><br>
+            <label><input type="radio" name="anxiety" value="rarely"> Rarely</label><br>
+            <label><input type="radio" name="anxiety" value="never"> Never</label><br>
+
+            <h3>8. Do you have hobbies or activities that you enjoy?</h3>
+            <label><input type="radio" name="hobbies" value="yes"> Yes</label><br>
+            <label><input type="radio" name="hobbies" value="sometimes"> Sometimes</label><br>
+            <label><input type="radio" name="hobbies" value="no"> No</label><br>
+
+            <h3>9. How often do you feel motivated to achieve your goals?</h3>
+            <label><input type="radio" name="motivation" value="always"> Always</label><br>
+            <label><input type="radio" name="motivation" value="often"> Often</label><br>
+            <label><input type="radio" name="motivation" value="sometimes"> Sometimes</label><br>
+            <label><input type="radio" name="motivation" value="never"> Never</label><br>
+
+            <h3>10. How would you rate your sleep quality?</h3>
+            <label><input type="radio" name="sleep" value="excellent"> Excellent</label><br>
+            <label><input type="radio" name="sleep" value="good"> Good</label><br>
+            <label><input type="radio" name="sleep" value="fair"> Fair</label><br>
+            <label><input type="radio" name="sleep" value="poor"> Poor</label><br>
+
+            <button onclick="showResult()">Submit</button>
+        </div>
+        <div id="quiz-result"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 ManoSewa. All rights reserved. <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
