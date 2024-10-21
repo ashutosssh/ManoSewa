@@ -26,8 +26,7 @@
     </header>
 
     <main>
-        <h1>Mental Health Quizzes</h1>
-        <p>Assess your mental well-being with the following quizzes:</p>
+        <h1>Assess your mental well-being with the following quizzes:</h1>
         <div id="quiz-content">
             <h3>1. How are you feeling today?</h3>
             <label><input type="radio" name="feeling" value="good"> Good</label><br>
@@ -88,11 +87,17 @@
 
             <button onclick="showResult()">Submit</button>
         </div>
-        <div id="quiz-result"></div>
     </main>
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="quiz-result"></p>
+        </div>
+    </div>
 
     <footer>
         <p>© 2024 ManoSewa. All rights reserved. <a href="contact.html">Contact Us</a></p>
     </footer>
+
 </body>
 </html>
