@@ -41,6 +41,21 @@ function showResult() {
     resultMessage += "Thank you for participating in the quiz!";
 
     document.getElementById("quiz-result").innerHTML = resultMessage;
+    const modal = document.getElementById("resultModal");
+    modal.style.display = "block";
+
+   
+    const span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -70,3 +85,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 }); 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const gameButtons = document.querySelectorAll('.game-btn');
+    
+    gameButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const selectedGame = this.getAttribute('data-game');
+
+
+            document.querySelectorAll('.game-container').forEach(container => {
+                container.style.display = 'none';
+            });
+
+            
+            if (selectedGame === 'bubble') {
+                document.getElementById('bubble-container').style.display = 'block';
+            } else if (selectedGame === 'coloring') {
+                document.getElementById('coloring-container').style.display = 'block';
+            }
+        });
+    });
+});
